@@ -1,0 +1,20 @@
+CREATE TABLE store(id INTEGER , name TEXT , price INTEGER);
+INSERT INTO store VALUES (1 , "burger" , 45);
+INSERT INTO store VALUES (2 , "meat balls" , 65);
+INSERT INTO store VALUES (3 , "mojito" , 60);
+INSERT INTO store VALUES (4 , "coc" , 59);
+INSERT INTO store VALUES (5 , "jain" , 20);
+INSERT INTO store VALUES (6 , "unwrapped sausages" , 100);
+INSERT INTO store VALUES (7 , "cigares choco" , 90);
+INSERT INTO store VALUES (8, "NCB Protection", 300);
+INSERT INTO store VALUES (9, "potato joints", 15);
+INSERT INTO store VALUES (10, "flavoures", 15);
+INSERT INTO store VALUES (11, "tube",22);
+INSERT INTO store VALUES (12, "pizza", 45);
+INSERT INTO store VALUES (13, "cough syrup", 50);
+INSERT INTO store VALUES (14, "BeBr Special", 250);
+INSERT INTO store VALUES (15, "Mint", 110);
+
+
+SELECT * FROM store ORDER BY price ;
+SELECT name , MAX(price) FROM store GROUP BY name;
